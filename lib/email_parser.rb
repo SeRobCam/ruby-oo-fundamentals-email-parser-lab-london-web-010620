@@ -5,10 +5,10 @@
 
 
 class EmailAddressParser
-  attr_accessor :parse
+  attr_accessor :csv_emails
   
   def initialize(csv_emails) 
-    @parser = email_addresses
+    @csv_emails = csv_emails
   end
   
   def parse 
@@ -17,7 +17,6 @@ class EmailAddressParser
     end
     .flatten.uniq 
   end 
-  
 end 
    
 
